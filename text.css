@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: lightblue; /* Change to your desired background color */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.text, .return {
+    width: 45%;
+    background-color: lightyellow; /* Change to your desired background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    margin-right: 10px;
+}
+
+.text-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchInput {
+    width: calc(100% - 100px); 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: skyblue;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search-results {
+    padding: 10px 0;
+}
+
+.entered-texts {
+    margin-top: 10px;
+}
+
+.entered-texts div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke; 
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.entered-texts div button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.entered-texts div button:first-child {
+    margin-left: auto;
+    margin-right: 10px; 
+}
+
+.entered-texts div button:last-child {
+    margin-left: 10px; 
+}
+
+.entered-texts div button:hover {
+    background-color: darkred;
+}
+
+.return {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.return button#clearAllButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.return button#clearAllButton:hover {
+    background-color: skyblue;
+}
+
+.return .text-line {
+    color: black;
+}
+
+.return .text-line.highlight {
+    color: black;
+    background: #000;
+}
